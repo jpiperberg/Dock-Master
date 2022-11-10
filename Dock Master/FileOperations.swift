@@ -66,7 +66,7 @@ class FileOperation {
             "VERSION=\"\(dock.packageVersion)\"\n\n" +
 
             "# The User Template directory is applied to new user accounts. The dock plist placed in this directory will be copied into new accounts.\n" +
-            "INSTALL_LOCATION=\"/System/Library/User Template/English.lproj/Library/Preferences/\"\n\n" +
+            "INSTALL_LOCATION=\"/Library/User Template/English.lproj/Library/Preferences/\"\n\n" +
             
             "# Change into the same directory as this script.\n" +
             "cd \"$(/usr/bin/dirname \"$0\")\"\n\n" +
@@ -94,7 +94,7 @@ class FileOperation {
             "### NOTHING BELOW THIS LINE NEEDS TO CHANGE ###\n\n" +
 
             "# A dock plist placed in the User Template directory is applied to new user accounts.\n" +
-            "USER_TEMPLATE_DOCK_PLIST=\"/System/Library/User Template/English.lproj/Library/Preferences/com.apple.dock.plist\"\n\n" +
+            "USER_TEMPLATE_DOCK_PLIST=\"/Library/User Template/English.lproj/Library/Preferences/com.apple.dock.plist\"\n\n" +
 
             "# Currently logged in user.\n" +
             "CURRENTLY_LOGGED_IN_USER=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')\n\n" +
